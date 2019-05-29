@@ -1,0 +1,14 @@
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\bin\Debug\netcoreapp2.1\Projeto_Monitoramento2.deps.json
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\bin\Debug\netcoreapp2.1\Projeto_Monitoramento2.runtimeconfig.json
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\bin\Debug\netcoreapp2.1\Projeto_Monitoramento2.runtimeconfig.dev.json
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\bin\Debug\netcoreapp2.1\Projeto_Monitoramento2.dll
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.RazorAssemblyInfo.cache
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.RazorAssemblyInfo.cs
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.RazorTargetAssemblyInfo.cache
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\bin\Debug\netcoreapp2.1\Projeto_Monitoramento2.pdb
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.dll
+C:\Users\Matheus\Desktop\Projeto_Monitoramento2.0\BackEnd\Projeto_Monitoramento2.0\Projeto_Monitoramento2.0\obj\Debug\netcoreapp2.1\Projeto_Monitoramento2.pdb
