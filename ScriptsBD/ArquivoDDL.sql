@@ -11,7 +11,8 @@ create table USUARIOS(
 	ID int primary key identity
 	,NOME varchar(200) not null
 	,EMAIL varchar(200) unique not null
-	,SENHA varchar(200) not null
+	,SENHA varchar(200) not null,
+	,DATA_CRIACAO datetime not null
 	,ID_TIPO_USUARIO int foreign key references TIPOS_USUARIO(ID)
 );
 

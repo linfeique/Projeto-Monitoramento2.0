@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.login__body{
+    display: flex;
+}
+
+.login__form__exterior{
+    width: 20vw;
+}
+
+.login__lado__esquerdo{
+    background-color: #6a1b9a;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login__copyright{
+    color: white;
+    font-size: 12px;
+}
+
+.login__lado__esquerdo img{
+    width: 100px;
+    height: 100;
+}
+
+.login__formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__input{
+    width: 230px;
+    height: 35px;
+    border-radius: 4px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+}
+
+.login__input:focus{
+    border: 1px solid #1e88e5;
+    transition: all 0.2s;
+}
+
+.login__input:not(:focus){
+    border: 1px solid transparent;
+    transition: all 0.2s;
+}
+
+.login__formulario label{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.login__formulario label span{
+    margin-bottom: 7px;
+}
+
+#login__btn{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#login__btn:focus{
+    background-color: #AAA;
+    border: 2px solid #524f4f;
+    outline: none;
+}
+
+#login__btn:not(:focus){
+    background-color: white;
+    outline: none;
+}
+
+.login__link{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.login__link span{
+    color: #1e88e5;
+}
