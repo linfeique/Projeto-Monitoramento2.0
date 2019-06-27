@@ -14,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     position: fixed;
     left: 0;
 }
@@ -26,19 +27,19 @@
 
 .menu__int{
     width: 100%;
-    margin-top: 30%;
+    margin-top: 10%;
 }
 
 .menu__lateral a img{
-    margin-top: 13%;
-    width: 100px;
-    height: 100px;
+    margin-top: 50%;
+    width: 140px;
+    height: 140px;
 }
 
 .menu__int ul a li{
     padding: 15px;
     color: white;
-    font-size: 14px;
+    font-size: 15px;
     list-style: none;
 }
 
@@ -52,4 +53,9 @@
     background-color: #6a1b9a;
     color: white;
     transition: 0.3s;
+}
+
+.menu__auxiliary{
+    width: 100%;
+    height: 200px;
 }

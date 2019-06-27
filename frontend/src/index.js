@@ -8,6 +8,7 @@ import * as serviceWorker from './serviceWorker';
 import Login from './pages/Login/login';
 import Register from './pages/Register/register';
 import PaginaInicial from './pages/PaginaInicial/paginaInicial';
+import MonitoramentoManual from './pages/MonitoramentoManual/moniManual';
 
 const Permissao = ({ component : Component }) => (
     <Route 
@@ -25,6 +26,7 @@ const rotas = (
                 <Route exact path="/" component={Login} />
                 <Route path="/register" component={Register} />
                 <Permissao path="/paginainicial" component={PaginaInicial} />
+                <Permissao path="/monitoramentomanual" component={MonitoramentoManual} />
             </Switch>
         </div>
     </Router>

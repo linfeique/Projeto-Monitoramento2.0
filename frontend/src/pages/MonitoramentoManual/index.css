@@ -1,0 +1,74 @@
+.moniM__body{
+    display: flex;
+}
+
+*{
+    outline: none;
+}
+
+.moniM__box{
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .5);
+    border-radius: 10px; 
+}
+
+.moniM__box h2{
+    margin: 0 0 30px;
+    color: white;
+    text-align: center;
+}
+
+.moniM__box .moniM__inputBox{
+    position: relative;
+}
+
+.moniM__box .moniM__inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.moniM__box .moniM__inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.moniM__box .moniM__inputBox input:focus ~ label,
+.moniM__box .moniM__inputBox input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #ab47bc;
+    font-size: 12px;
+}
+
+.moniM__box .moniM__inputBox input:valid{
+    border-bottom-color: aquamarine;
+    transition: .8s;
+}
+
+.moniM__box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: #ab47bc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}

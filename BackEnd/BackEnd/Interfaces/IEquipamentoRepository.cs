@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Threading.Tasks;
 
 namespace BackEnd.Interfaces
@@ -13,5 +14,7 @@ namespace BackEnd.Interfaces
         void Atualizar(Equipamento equipamento);
 
         List<Equipamento> Listar();
+
+        string MonitoramentoManual(string ipEquipamento);
     }
 }
