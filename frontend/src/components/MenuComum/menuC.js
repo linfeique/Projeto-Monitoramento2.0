@@ -13,7 +13,7 @@ export default class MenuComum extends Component {
                 <Link to="/paginainicial"><img src={logo} /></Link>
                 <nav className="menu__int">
                     <ul>
-                        <Link to="#"><li>Página Inicial</li></Link>
+                        <Link to="/paginainicial"><li>Página Inicial</li></Link>
                         <Link to="#"><li>Relatório Atual</li></Link>
                         <Link to="/monitoramentomanual"><li>Monitoramento Manual</li></Link>
                         <Link to="#"><li>Cadastrar Equipamento</li></Link>

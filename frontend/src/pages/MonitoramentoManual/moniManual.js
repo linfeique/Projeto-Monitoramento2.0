@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Menu from '../../components/MenuComum/menuC';
 import background from '../../assets/imagenFundo02.png';
-import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 const styles = {
     width: '82vw',
@@ -23,7 +24,12 @@ export default class MonitoramentoManual extends Component {
 
         this.state = {
             address: '',
+            show: false,
+            show2: false
         }
+
+        this.toggle = this.toggle.bind(this);
+        this.toggle2 = this.toggle2.bind(this);
     }
 
     atualizaEstado(event){
@@ -33,26 +39,62 @@ export default class MonitoramentoManual extends Component {
     moniManual(event){
         event.preventDefault();
 
-        axios.post('http://localhost:5000/api/equipamentos/monitoramentomanual', {
+        let ipAddress = {
             address: this.state.address
-        })
-        .then(res => {
-            if(res.data == "Success"){
-            }
-        })
-        .catch(erro => console.log(erro))
+        }
+
+        if(/^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/.test(ipAddress.address)){
+            return (
+                axios.post('http://localhost:5000/api/equipamentos/monitoramentomanual', ipAddress)
+                .then(res => {
+                    console.log(res)
+                    if(res.data == "Success"){
+                        this.toggle()
+                    } else if(res.data == "TimedOut"){
+                        this.toggle2()
+                    }
+                })
+                .catch(erro => {
+                    if(erro.includes('400')){
+                        alert('Esse ip não é valido');
+                    } else{
+                        alert('O servidor não está ligado');
+                    }
+                })
+            );
+        }
+    }
+
+    toggle() {
+        this.setState({
+            show: !this.state.show
+        });
+    }
+
+    toggle2() {
+        this.setState({
+            show2: !this.state.show2
+        });
     }
 
     render() {
         return (
             <div className="moniM__body">
                 <Menu />
-                <Toast style={{position: 'absolute', top: 0, right: 0}}>
-                    <ToastHeader icon="dark">
-                        Reactstrap
+                <Toast isOpen={this.state.show} style={{position: 'absolute', top: 20, right: 20, width: 350}}>
+                    <ToastHeader toggle={this.toggle} icon="success">
+                        Teste de Ip
                     </ToastHeader>
                     <ToastBody>
-                        This is a toast with a dark icon — check it out!
+                        O ip está na rede e está funcionando
+                    </ToastBody>
+                </Toast>
+                <Toast isOpen={this.state.show2} style={{position: 'absolute', top: 20, right: 20, width: 350}}>
+                    <ToastHeader toggle={this.toggle2} icon="danger">
+                        Teste de Ip
+                    </ToastHeader>
+                    <ToastBody>
+                        O ip está na rede, mas não está respondendo
                     </ToastBody>
                 </Toast>
                 <div style={styles}>

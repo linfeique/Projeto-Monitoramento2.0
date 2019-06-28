@@ -4,18 +4,21 @@ import { Toast, ToastBody, ToastHeader } from 'reactstrap';
 
 export default class ModalAddress extends Component {
 
-    onClose = (e) => {
+    toggle = (e) => {
         this.props.onClose && this.props.onClose(e);
     }
 
     render() {
+        if (!this.props.isOpen) {
+            return null;
+        }
         return (
-            <Toast>
-                <ToastHeader icon="primary">
-                    Reactstrap
+            <Toast isOpen={this.props.isOpen} style={{position: 'absolute', top: 20, right: 20, width: 350}}>
+                <ToastHeader toggle={this.toggle()} icon="danger">
+                    Teste de Ip
                 </ToastHeader>
                 <ToastBody>
-                    This is a toast with a primary icon — check it out!
+                    O ip está na rede mas não está respondendo
                 </ToastBody>
             </Toast>
         );
